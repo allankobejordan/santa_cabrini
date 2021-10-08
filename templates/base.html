@@ -1,0 +1,40 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Santa Cabrini</title>
+    {% include 'parciais/_head.html' %}
+  
+</head>
+
+<body>
+    <div class="principal">
+<!-- Sidebar -->
+    {% include 'parciais/_nav.html' %}
+<!-- End of Sidebar -->
+ 
+{% comment %} --Navbar----- {% endcomment %}
+    {% include 'parciais/_nav-top.html'%}
+{% comment %} -----end navbar-------- {% endcomment %}
+
+<!-- Main Content -->
+    {%block conteudo%} {%endblock%}
+    {%block empresas%} {%endblock%}
+    {%block apenado%} {%endblock%} 
+    {%block curso%} {%endblock%} 
+    {%block indice%} {%endblock%} 
+    {%block salario%} {%endblock%} 
+    {%block auditoria%} {%endblock%} 
+<!-- End of Main Content -->
+          
+<!-- Bootstrap core JavaScript-->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/principal.js' %}"></script>
+
+</div>
+</body>
+
+</html>
